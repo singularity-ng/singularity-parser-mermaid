@@ -24,7 +24,7 @@ Dynamic: license-file
 [![Tests Passing](https://img.shields.io/badge/tests-133%2F133%20passing-brightgreen)](docs/TESTING.md)
 [![Diagram Coverage](https://img.shields.io/badge/coverage-23%2F23%20types-brightgreen)](docs/ARCHITECTURE.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Mermaid Version](https://img.shields.io/badge/Mermaid-11.12.0-blueviolet.svg)](https://mermaid.js.org/)
+[![Mermaid Version](https://img.shields.io/badge/Mermaid-11.12.2-blueviolet.svg)](https://mermaid.js.org/)
 [![tree-sitter](https://img.shields.io/badge/tree--sitter-0.26-green)](https://tree-sitter.github.io/tree-sitter/)
 [![npm](https://img.shields.io/npm/v/tree-sitter-mermaid)](https://www.npmjs.com/package/tree-sitter-mermaid)
 [![PyPI](https://img.shields.io/pypi/v/tree-sitter-mermaid)](https://pypi.org/project/tree-sitter-mermaid/)
@@ -721,7 +721,7 @@ MIT - See [LICENSE](LICENSE) for details.
 - **Test Coverage**: 133/133 passing (100%)
 - **Language Bindings**: 6 (Rust, Node.js, Python, Go, Swift, C)
 - **Documentation**: Comprehensive (Architecture, Testing, API guides)
-- **Last Updated**: October 2024
+- **Last Updated**: December 2025
 - **Maintenance Status**: Actively maintained
 
 ---

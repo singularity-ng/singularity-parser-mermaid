@@ -368,7 +368,7 @@ Python doesn't have dedicated test files but uses corpus tests via setup.
 #### Test Configuration
 **Files**:
 - `setup.py` - Setup script for building C extension
-- `pyproject.toml` - Modern Python project config (version 0.26.3)
+- `pyproject.toml` - Modern Python project config (tree-sitter version 0.25.2)
 
 #### What Gets Tested
 - C extension compilation
@@ -503,7 +503,7 @@ clean            # Remove build artifacts
 install          # Install library system-wide
 ```
 
-**Version Management**: VERSION variable (e.g., 0.26.3)
+**Version Management**: VERSION variable (e.g., tree-sitter 0.26.3 for C library, 0.25.2 for Python)
 
 ### pkg-config File
 
