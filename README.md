@@ -439,7 +439,7 @@ func main() {
 Add to `Cargo.toml`:
 ```toml
 [dependencies]
-tree-sitter-mermaid = "0.26"
+tree-sitter-mermaid = "0.9.1"
 ```
 
 Or from git:
