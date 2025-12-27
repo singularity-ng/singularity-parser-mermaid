@@ -34,7 +34,7 @@ A modern, actively maintained [Mermaid.js](https://mermaid-js.github.io/mermaid/
 
 **Published as `tree-sitter-mermaid`** on npm, PyPI, and crates.io for easy installation and discoverability.
 
-> **✅ Production Ready**: This parser is production-ready and suitable for use in production environments. See our comprehensive [Production Readiness Assessment](docs/PRODUCTION_READINESS.md) for detailed evaluation (Score: 89/100).
+> **✅ Production Ready**: This parser is production-ready and suitable for use in production environments. See our comprehensive [Production Readiness Assessment](https://github.com/Singularity-ng/singularity-parser-mermaid/blob/main/docs/PRODUCTION_READINESS.md) for detailed evaluation (Score: 89/100).
 
 ## 🙏 Credits
 
