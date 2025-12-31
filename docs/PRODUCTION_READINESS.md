@@ -7,7 +7,7 @@
 ### Overall Status: **PRODUCTION READY** ✅
 
 **Version**: 0.9.1
-**Last Assessment**: November 2025  
+**Last Assessment**: December 2025  
 **Confidence Level**: High
 
 ---
@@ -37,7 +37,7 @@
 - **Complete Grammar Implementation**: All 23 Mermaid diagram types fully supported
 - **Clean Architecture**: Well-organized grammar rules with clear structure
 - **Documented Code**: Grammar rules include inline documentation
-- **Modern Standards**: Uses tree-sitter 0.25.x, Rust 2021 edition
+- **Modern Standards**: Uses tree-sitter 0.26.x, Rust 2021 edition
 - **Multiple Bindings**: Supports 6 languages (Rust, Node.js, Python, Go, Swift, C)
 
 ### Areas for Improvement
@@ -456,7 +456,7 @@ Maintenance is active and sustainable. Adding co-maintainers would improve long-
 - ✅ Any tree-sitter-compatible editor
 
 ### tree-sitter Compatibility
-- **Version**: 0.25.x
+- **Version**: 0.26.x
 - **API**: Stable tree-sitter API
 - **Queries**: Standard query syntax
 

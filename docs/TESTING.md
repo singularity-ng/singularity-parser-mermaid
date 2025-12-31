@@ -32,17 +32,17 @@ npm install -g tree-sitter-cli
 ### Via binary download (Recommended for CI/CD)
 ```bash
 # Linux x64
-curl -L https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.10/tree-sitter-linux-x64.gz | gunzip > tree-sitter
+curl -L https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.3/tree-sitter-linux-x64.gz | gunzip > tree-sitter
 chmod +x tree-sitter
 sudo mv tree-sitter /usr/local/bin/
 
 # macOS x64
-curl -L https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.10/tree-sitter-macos-x64.gz | gunzip > tree-sitter
+curl -L https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.3/tree-sitter-macos-x64.gz | gunzip > tree-sitter
 chmod +x tree-sitter
 sudo mv tree-sitter /usr/local/bin/
 
 # macOS ARM64  
-curl -L https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.10/tree-sitter-macos-arm64.gz | gunzip > tree-sitter
+curl -L https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.3/tree-sitter-macos-arm64.gz | gunzip > tree-sitter
 chmod +x tree-sitter
 sudo mv tree-sitter /usr/local/bin/
 ```
@@ -50,7 +50,7 @@ sudo mv tree-sitter /usr/local/bin/
 ### Verify Installation
 ```bash
 tree-sitter --version
-# Should output: tree-sitter 0.25.10 (da6fe9beb4f7f67beb75914ca8e0d48ae48d6406)
+# Should output: tree-sitter 0.26.3
 ```
 
 ## Test Infrastructure Overview
@@ -368,7 +368,9 @@ Python doesn't have dedicated test files but uses corpus tests via setup.
 #### Test Configuration
 **Files**:
 - `setup.py` - Setup script for building C extension
-- `pyproject.toml` - Modern Python project config (version 0.25.10)
+- `pyproject.toml` - Modern Python project config (tree-sitter version 0.25.2)
+
+**Note**: Python bindings use tree-sitter 0.25.2 (the latest available on PyPI as of December 2025) while other bindings use 0.26.x. The parser itself is generated with tree-sitter 0.26.3 CLI and is fully compatible.
 
 #### What Gets Tested
 - C extension compilation
@@ -503,7 +505,7 @@ clean            # Remove build artifacts
 install          # Install library system-wide
 ```
 
-**Version Management**: VERSION variable (e.g., 0.25.10)
+**Version Management**: VERSION variable (e.g., tree-sitter 0.26.3 for C library, 0.25.2 for Python)
 
 ### pkg-config File
 

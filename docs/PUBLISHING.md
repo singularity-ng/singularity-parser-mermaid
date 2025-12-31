@@ -37,7 +37,7 @@ See workflows in `.github/workflows/publish-*.yml`
 Before publishing to any registry:
 
 - [ ] All tests passing (`make test`) - Currently: ✅ 133/133
-- [ ] tree-sitter versions consistent (0.25.x everywhere)
+- [ ] tree-sitter versions consistent (0.26.x, except Python bindings)
 - [ ] Documentation up-to-date (README, ARCHITECTURE, etc.)
 - [ ] CHANGELOG updated with release notes
 - [ ] Version numbers synchronized across all files
@@ -213,7 +213,7 @@ git push origin main --tags
 
 ## 📊 Current Status
 
-As of October 2024:
+As of December 2025:
 
 - ✅ **Package renamed**: `tree-sitter-mermaid` (available on all registries!)
 - ✅ **Swift PM**: Ready (Git-based, working)

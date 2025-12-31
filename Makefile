@@ -163,9 +163,9 @@ $(LANGUAGE_NAME).pc: bindings/c/$(LANGUAGE_NAME).pc.in
 
 # Generate parser from grammar.js
 # This is the core build step that creates parser.c from the grammar definition
-# Run: npm run generate (or tree-sitter generate --no-bindings)
+# Run: npm run generate (or tree-sitter generate)
 $(SRC_DIR)/parser.c: grammar.js
-	$(TS) generate --no-bindings
+	$(TS) generate
 
 # Install library to system directories
 # Creates symlinks for version compatibility:

@@ -14,18 +14,18 @@ Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Provides-Extra: core
-Requires-Dist: tree-sitter~=0.25; extra == "core"
+Requires-Dist: tree-sitter~=0.25.2; extra == "core"
 Dynamic: license-file
 
 # 🚀 Singularity TreeSitter Mermaid - tree-sitter-mermaid
 
 [![CI](https://github.com/Singularity-ng/singularity-parser-mermaid/actions/workflows/ci.yml/badge.svg)](https://github.com/Singularity-ng/singularity-parser-mermaid/actions/workflows/ci.yml)
-[![Production Ready](https://img.shields.io/badge/status-production%20ready-brightgreen)](PRODUCTION_READINESS.md)
-[![Tests Passing](https://img.shields.io/badge/tests-133%2F133%20passing-brightgreen)](TESTING.md)
-[![Diagram Coverage](https://img.shields.io/badge/coverage-23%2F23%20types-brightgreen)](ARCHITECTURE.md)
+    [![Production Ready](https://img.shields.io/badge/status-production%20ready-brightgreen)](https://github.com/Singularity-ng/singularity-parser-mermaid/blob/main/docs/PRODUCTION_READINESS.md)
+    [![Tests Passing](https://img.shields.io/badge/tests-133%2F133%20passing-brightgreen)](https://github.com/Singularity-ng/singularity-parser-mermaid/blob/main/docs/TESTING.md)
+    [![Diagram Coverage](https://img.shields.io/badge/coverage-23%2F23%20types-brightgreen)](https://github.com/Singularity-ng/singularity-parser-mermaid/blob/main/docs/ARCHITECTURE.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Mermaid Version](https://img.shields.io/badge/Mermaid-11.12.0-blueviolet.svg)](https://mermaid.js.org/)
-[![tree-sitter](https://img.shields.io/badge/tree--sitter-0.25-green)](https://tree-sitter.github.io/tree-sitter/)
+[![Mermaid Version](https://img.shields.io/badge/Mermaid-11.12.2-blueviolet.svg)](https://mermaid.js.org/)
+[![tree-sitter](https://img.shields.io/badge/tree--sitter-0.26-green)](https://tree-sitter.github.io/tree-sitter/)
 [![npm](https://img.shields.io/npm/v/tree-sitter-mermaid)](https://www.npmjs.com/package/tree-sitter-mermaid)
 [![PyPI](https://img.shields.io/pypi/v/tree-sitter-mermaid)](https://pypi.org/project/tree-sitter-mermaid/)
 [![crates.io](https://img.shields.io/crates/v/tree-sitter-mermaid)](https://crates.io/crates/tree-sitter-mermaid)
@@ -34,7 +34,7 @@ A modern, actively maintained [Mermaid.js](https://mermaid-js.github.io/mermaid/
 
 **Published as `tree-sitter-mermaid`** on npm, PyPI, and crates.io for easy installation and discoverability.
 
-> **✅ Production Ready**: This parser is production-ready and suitable for use in production environments. See our comprehensive [Production Readiness Assessment](PRODUCTION_READINESS.md) for detailed evaluation (Score: 89/100).
+> **✅ Production Ready**: This parser is production-ready and suitable for use in production environments. See our comprehensive [Production Readiness Assessment](https://github.com/Singularity-ng/singularity-parser-mermaid/blob/main/docs/PRODUCTION_READINESS.md) for detailed evaluation (Score: 89/100).
 
 ## 🙏 Credits
 
@@ -47,7 +47,7 @@ Singularity maintains this distribution, led by [Mikael Hugo](https://github.com
 - 🚀 **Complete Mermaid Support** - All 23 diagram types fully implemented with comprehensive parsing
 - 🎯 **100% Test Passing** - 133 comprehensive corpus tests across all diagram types
 - ✅ **23/23 Diagram Types Supported** - Full coverage of Mermaid specification with complete grammar
-- 🦀 **Modern Rust & Tree-sitter** - Latest stable versions (Rust 2021, tree-sitter 0.25)
+- 🦀 **Modern Rust & Tree-sitter** - Latest stable versions (Rust 2021, tree-sitter 0.26)
 - 📊 **Multiple Language Bindings** - Rust, Node.js, Python, Go, Swift, C
 - 🎨 **Syntax Highlighting** - Query files for Neovim, Helix, and other tree-sitter editors
 - 🧪 **Automated Testing** - Corpus-based test suite with full spec coverage
@@ -458,7 +458,7 @@ func main() {
 Add to `Cargo.toml`:
 ```toml
 [dependencies]
-tree-sitter-mermaid = "0.25"
+tree-sitter-mermaid = "0.9.1"
 ```
 
 Or from git:
@@ -611,21 +611,21 @@ npm test                     # Node.js bindings
 - **Cross-platform support** via GitHub Actions
 - **Local CI reproduction**: `docker-compose run ci` runs same tests locally
 
-See [TESTING.md](TESTING.md) for comprehensive testing guide.
+See [TESTING.md](docs/TESTING.md) for comprehensive testing guide.
 
 ## 📚 Documentation
 
 | Document | Purpose |
 |---|---|
 | [README.md](README.md) | Overview, quick start, examples, installation |
-| [PRODUCTION_READINESS.md](PRODUCTION_READINESS.md) | Comprehensive production readiness assessment |
-| [ARCHITECTURE.md](ARCHITECTURE.md) | System design, grammar structure, parser internals |
-| [TESTING.md](TESTING.md) | Testing infrastructure, how to write tests, CI/CD details |
+| [PRODUCTION_READINESS.md](docs/PRODUCTION_READINESS.md) | Comprehensive production readiness assessment |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System design, grammar structure, parser internals |
+| [TESTING.md](docs/TESTING.md) | Testing infrastructure, how to write tests, CI/CD details |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution guidelines, development workflow |
 | [CHANGELOG.md](CHANGELOG.md) | Version history and release notes |
 | [SECURITY.md](SECURITY.md) | Security policy and vulnerability reporting |
 | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards and expectations |
-| [PUBLISHING.md](PUBLISHING.md) | Package publishing process and distribution |
+| [PUBLISHING.md](docs/PUBLISHING.md) | Package publishing process and distribution |
 | [CLAUDE.md](CLAUDE.md) | AI assistant guidelines, development workflow |
 | [grammar.js](grammar.js) | Grammar definition with inline documentation |
 
@@ -721,7 +721,7 @@ MIT - See [LICENSE](LICENSE) for details.
 - **Test Coverage**: 133/133 passing (100%)
 - **Language Bindings**: 6 (Rust, Node.js, Python, Go, Swift, C)
 - **Documentation**: Comprehensive (Architecture, Testing, API guides)
-- **Last Updated**: October 2024
+- **Last Updated**: December 2025
 - **Maintenance Status**: Actively maintained
 
 ---

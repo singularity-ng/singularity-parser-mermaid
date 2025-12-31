@@ -7,9 +7,11 @@ Cargo.lock
 .cargo-build/
 *.o
 *.so
+*.a
 *.dylib
 *.dll
 *.dSYM/
+*.pc
 build/
 
 # IDE
@@ -39,4 +41,13 @@ mermaid-examples/
 
 # Node.js
 node_modules/
-package-lock.json*.tgz
+package-lock.json
+*.tgz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+*.egg
